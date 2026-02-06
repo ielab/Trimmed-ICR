@@ -1,0 +1,22 @@
+name: icr
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # Core dependencies
+      - torch>=2.0.0
+      - transformers>=4.30.0
+      - datasets>=2.0.0
+      - pyserini>=0.20.0
+      - pandas>=1.5.0
+      - numpy>=1.20.0
+      - tqdm>=4.60.0
+      - beir>=2.0.0
+      - accelerate>=0.20.0
+      - huggingface-hub>=0.15.0
+      # Optional: flash-attn (install separately if needed)
+      # - flash-attn>=2.0.0
